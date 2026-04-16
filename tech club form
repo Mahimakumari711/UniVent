@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>Tech Club - Registration</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0fdf4;
+}
+
+form {
+    border: 1px solid #c1f0d0;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h2 {
+    text-align: center;
+    color: #059669;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #065f46;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+#error,
+#success {
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #059669;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.2);
+}
+
+button {
+    background-color: #059669;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 8px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #047857;
+}
+
+#error {
+    color: #b91c1c;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+#success {
+    color: #166534;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    display: none;
+}
+</style>
+</head>
+<body>
+<h2>Tech Club - Event Registration</h2>
+<form id="registrationForm">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="branch">Branch:</label>
+    <select id="branch" name="branch">
+        <option value="">Select Branch</option>
+        <option value="CSE">CSE</option>
+        <option value="IT">ECE</option>
+        <option value="ECE">EEE</option>
+        <option value="MECH">CEN</option>
+        <option value="CIVIL">Masters</option>
+    </select>
+
+    <label for="year">Year of Study:</label>
+    <select id="year" name="year">
+        <option value="">Select Year</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+    </select>
+
+    <label for="mobile">Phone Number:</label>
+    <input type="tel" id="mobile" name="mobile">
+
+    <label for="event">Event Name:</label>
+    <select id="event" name="event">
+        <option value="">Select Event</option>
+        <option value="Hackathon">Tech Hackathon</option>
+        <option value="Workshop">Coding Workshop</option>
+        <option value="Project">Project Showcase</option>
+        <option value="Hacknight">Hackathon Night</option>
+        <option value="IDE">IDE Quiz</option>
+    </select>
+
+    <label for="skills">Technical Skills (comma‑separated):</label>
+    <input type="text" id="skills" name="skills" placeholder="e.g., C++, Python, Web, Android">
+
+    <label for="sic">Student Unique ID (SIC):</label>
+    <input type="text" id="sic" name="sic" placeholder="e.g., SIC123456">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <button type="submit">Register</button>
+
+    <p id="error"></p>
+    <p id="success">Registration successful!</p>
+</form>
+
+<script>
+document.getElementById('registrationForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const errorDiv = document.getElementById('error');
+    const successDiv = document.getElementById('success');
+    errorDiv.textContent = '';
+    successDiv.style.display = 'none';
+
+    let isValid = true;
+    let errors = [];
+
+    const name = document.getElementById('name').value.trim();
+    if (!name) {
+        errors.push('Full Name is required.');
+        isValid = false;
+    }
+
+    const branch = document.getElementById('branch').value;
+    if (!branch) {
+        errors.push('Please select your branch.');
+        isValid = false;
+    }
+
+    const year = document.getElementById('year').value;
+    if (!year) {
+        errors.push('Please select your year of study.');
+        isValid = false;
+    }
+
+    const mobile = document.getElementById('mobile').value.trim();
+    if (!mobile) {
+        errors.push('Phone number is required.');
+        isValid = false;
+    } else if (!/^\d{10}$/.test(mobile)) {
+        errors.push('Phone number must be exactly 10 digits.');
+        isValid = false;
+    }
+
+    const event = document.getElementById('event').value;
+    if (!event) {
+        errors.push('Please select an event.');
+        isValid = false;
+    }
+
+    const skills = document.getElementById('skills').value.trim();
+    if (!skills) {
+        errors.push('Please mention your technical skills.');
+        isValid = false;
+    }
+
+    const sic = document.getElementById('sic').value.trim();
+    if (!sic) {
+        errors.push('Student Unique ID (SIC) is required.');
+        isValid = false;
+    }
+
+    const email = document.getElementById('email').value.trim();
+    if (!email) {
+        errors.push('Email is required.');
+        isValid = false;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        errors.push('Please enter a valid email format.');
+        isValid = false;
+    }
+
+    if (!isValid) {
+        errorDiv.innerHTML = errors.join('<br>');
+    } else {
+        successDiv.style.display = 'block';
+        this.reset();
+    }
+});
+</script>
+</body>
+</html>

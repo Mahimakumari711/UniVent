@@ -1,0 +1,202 @@
+<html>
+<head>
+<title>Univent - College Event Portal</title>
+
+<style>
+
+body {
+    background-color: #f0fdf4;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    color: white;
+    background-color: #059669;         
+    text-align: center;
+    padding: 40px;
+}
+
+.footer {
+    color: white;
+    background-color: #059669;
+    text-align: center;
+    padding: 40px;
+}
+
+.nav {
+    background-color: #065f46;
+    text-align: center;
+    padding: 15px;
+}
+
+.nav a {
+    color: #d1fae5;
+    margin: 25px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #facc15;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #059669;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    text-align: center;
+}
+
+#education p {
+    text-align: center;
+}
+
+#hobby ul {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.button,
+button {
+    background-color: #facc15;        
+    border-radius: 15px;
+    width: 110px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #047857;
+    margin: 10px 0;
+}
+
+.footer a {
+    color: #d1fae5;
+    text-decoration: none;
+    margin: 10px;
+}
+
+</style>
+</head>
+<body>
+<header class="header">
+    <h2>Univent - College Event Portal</h2>
+    <p>
+        Welcome to Univent, your hub for college clubs and events. Explore our clubs,
+        register for activities, and stay updated with upcoming events.
+    </p>
+</header>
+
+<nav class="nav">
+    <a href="#sports">Sports Club</a>
+    <a href="#tech">Tech Club</a>
+    <a href="#arts">Arts Club</a>
+</nav>
+
+<main>
+<section id="sports">
+    <h3>Sports Club</h3>
+
+    <div class="container">
+        <div class="card">
+
+            <img src="https://c8.alamy.com/comp/C8T3X1/illustration-of-sports-club-C8T3X1.jpg" 
+            alt="Sports Club" class="profile-img">
+            
+            <h4>Play, Compete, Grow!</h4>
+
+            <p>
+                Join our Sports Club to participate in tournaments, training sessions, and inter‑college matches. 
+                All sports lovers are welcome to register and build their skills and teamwork.
+            </p>
+            
+            <button>Register</button>
+
+            <div>&#x2709; sports@univentcollege.edu</div>
+            <div>&#x260E; +91-9876543210</div>
+        </div>
+    </div>
+</section><br><br>
+
+<section id="tech">
+    <h3>Tech Club</h3>
+
+    <div class="container">
+        <div class="card">
+
+            <img src="https://tse3.mm.bing.net/th/id/OIP.x5Aj_BOSIwXChx1Z1z4uQgHaEw?rs=1&pid=ImgDetMain&o=7&rm=3" 
+            alt="Tech Club" class="profile-img">
+
+            <h4>Innovate, Code, Create!</h4>
+
+            <p>
+                Our Tech Club organizes coding hackathons, workshops, and project exhibitions.
+                Join us to sharpen your technical skills and contribute to real‑world solutions.
+            </p>
+
+            <button>Register</button>
+
+            <div>&#x2709; tech@univentcollege.edu</div>
+            <div>&#x260E; +91-8765432109</div>
+        </div>
+    </div>
+</section><br><br>
+
+<section id="arts">
+    <h3>Arts Club</h3>
+
+    <div class="container">
+        <div class="card">
+
+            <img src="https://tse1.mm.bing.net/th/id/OIP.UeU5o0lvnyzklWC647B_SwHaH0?rs=1&pid=ImgDetMain&o=7&rm=3" 
+            alt="Arts Club" class="profile-img">
+
+            <h4>Express, Create, Inspire!</h4>
+
+            <p>
+                The Arts Club brings together painters, musicians, dancers, and designers. 
+                Join us to showcase your talent in cultural events and creative festivals.
+            </p>
+
+            <button>Register</button>
+
+            <div>&#x2709; arts@univentcollege.edu</div>
+            <div>&#x260E; +91-7654321098</div>
+        </div>
+    </div>
+</section>
+</main><br><br>
+
+<footer class="footer">
+    <h2>&copy; Univent College Events Portal</h2>
+
+    <a href="https://www.facebook.com/">Facebook</a>
+    <a href="https://www.instagram.com/">Instagram</a>
+    <a href="https://github.com/">GitHub</a>
+
+    <br><br>
+
+    <button class="button">Add Event (Council)</button>
+</footer>
+</body>
+</html>

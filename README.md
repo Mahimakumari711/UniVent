@@ -45,3 +45,14 @@ CSS3
 JavaScript (Vanilla JS)
 
 No external frameworks or libraries were used.
+
+<hr>
+<br>
+Home Page
+<br>
+<img width="1731" height="2933" alt="Screenshot_16-6-2026_04952_127 0 0 1" src="https://github.com/user-attachments/assets/a52f7188-71a3-4b28-83d0-1a09c7fc85f4" />
+<br><br><br>
+Registration Form
+<br>
+<img width="1731" height="1238" alt="Screenshot_16-6-2026_05013_127 0 0 1" src="https://github.com/user-attachments/assets/e1acd49c-72fc-4bf4-99ee-38e7cc14132d" />
+

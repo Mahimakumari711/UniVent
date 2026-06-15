@@ -1,10 +1,10 @@
 # UniVent
 
-🎓 Univent - College Event Portal
+<h2>🎓 Univent - College Event Portal</h2>
 
 A simple front-end web application built using HTML, CSS, and JavaScript that serves as a college event and club registration portal. The project showcases different college clubs and allows students to navigate to registration forms for various events.
 
-📌 Project Overview
+<h2>📌 Project Overview</h2>
 
 Univent is a static college event management portal designed to provide students with information about club activities and event registrations. The website contains dedicated sections for:
 
@@ -21,9 +21,8 @@ Registration button
 
 The project also includes a simple council login modal for event management demonstration purposes.
 
-Note: This project is purely front-end and does not contain any backend functionality, database integration, authentication system, or form data storage.
 
-✨ Features
+<h2>✨ Features</h2>
 Homepage
 Clean and responsive user interface
 Navigation bar for quick access to club sections
@@ -48,11 +47,11 @@ No external frameworks or libraries were used.
 
 <hr>
 <br>
-Home Page
+<h3>Home Page</h3>
 <br>
-<img width="1731" height="1933" alt="Screenshot_16-6-2026_04952_127 0 0 1" src="https://github.com/user-attachments/assets/a52f7188-71a3-4b28-83d0-1a09c7fc85f4" />
+<img width="432" height="733" alt="Screenshot_16-6-2026_04952_127 0 0 1" src="https://github.com/user-attachments/assets/a52f7188-71a3-4b28-83d0-1a09c7fc85f4" />
 <br><br><br>
-Registration Form
+<h3>Registration Form</h3>
 <br>
-<img width="1731" height="638" alt="Screenshot_16-6-2026_05013_127 0 0 1" src="https://github.com/user-attachments/assets/e1acd49c-72fc-4bf4-99ee-38e7cc14132d" />
+<img width="432" height="309" alt="Screenshot_16-6-2026_05013_127 0 0 1" src="https://github.com/user-attachments/assets/e1acd49c-72fc-4bf4-99ee-38e7cc14132d" />
 
